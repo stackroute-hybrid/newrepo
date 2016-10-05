@@ -15,5 +15,3 @@ node {
   sh "cp package.json dist && cd dist && tar cvzf my-ci-project_current.tar.gz *"
   step([$class: 'ArtifactArchiver', artifacts: 'dist/*.tar.gz', fingerprint: true])
 }
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
